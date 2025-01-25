@@ -366,6 +366,9 @@ class MainActivity : AppCompatActivity() {
                         Log.d("MYTAG","Expression:"+st.toString())
 
                         if(j1>1) {
+                            if (i1>=arr.size){
+                                i1=arr.size-1
+                            }
                             if (!arr.get(i1).equals("*") && !arr.get(i1).equals("/") && !arr.get(i1)
                                     .equals("%")
                             ) {
